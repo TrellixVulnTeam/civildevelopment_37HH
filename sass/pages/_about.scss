@@ -1,0 +1,142 @@
+.headerabout {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.6)
+    ),
+    url(../img/abouthero.jpg);
+  background-size: cover;
+  height: 95vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  @include respond(por-tablet) {
+    height: 100vh;
+  }
+  @include respond(phone) {
+    height: 100vh;
+  }
+  &__secondary{
+    font-size: 4rem;
+    color: $color-gray;
+    text-align: justify all;
+    &-paragraph{
+      font-size: 2rem;
+      color: $color-gray;
+      text-align: justify;
+
+    } 
+  }
+  &__container {
+    height: 50rem;
+    padding: 3rem;
+    width: 70rem;
+    border-radius: 0.5rem;
+    box-shadow: 2rem 4rem 6rem rgba($color-black, 0.8);
+    background-color: rgba($color-white, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%) skewX(-12deg);
+    @include respond(pc) {
+      max-width: 85%;
+    }
+    @include respond(por-tablet) {
+      max-width: 60%;
+    }
+    @include respond(phone) {
+      max-width: 50%;
+    }
+  }
+  &__comments {
+    width: 90%;
+    padding: 2.5rem;
+    box-shadow: 1rem 3rem 4rem rgba($color-black, 0.8);
+    background-color: rgba($color-red, 0.8);
+    border-radius: 0.3rem;
+    &-two {
+      background-color: rgba($color-orange, 0.8);
+    }
+    &__tertiary {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+
+      &__name {
+        display: block;
+        letter-spacing: 0.2rem;
+      }
+      &__profession {
+        display: block;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+    &__paragraph {
+      font-size: 1.4rem;
+    }
+    &__text {
+      transform: skewX(12deg);
+    }
+    &__figure {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      border: 0.3rem solid $color-red;
+      shape-outside: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      transform: translateX(-1rem) skewX(12deg);
+      position: relative;
+      overflow: hidden;
+      float: left;
+      &-imageone {
+        height: 100%;
+        transform: translateX(-10rem) scale(1.2);
+        transition: all 0.2s;
+        overflow: hidden;
+      }
+      &-imagetwo {
+        height: 100%;
+        transform: translateX(-8rem) scale(1.1);
+        transition: all 0.2s;
+        overflow: hidden;
+      }
+      &:hover &-imagetwo {
+        transform: translateX(-8rem) scale(0.8);
+        filter: blur(0.3rem) brightness(60%);
+      }
+      &:hover &-imageone {
+        transform: translateX(-9rem) scale(1);
+        filter: blur(0.3rem) brightness(60%);
+      }
+    }
+    &__caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      transition: all 0.2s;
+      color: $color-white;
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      opacity: 0;
+      backface-visibility: hidden;
+    }
+    &:hover &__caption {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+    &:hover &__figure-imagetwo {
+      transform: translateX(-8rem) scale(0.8);
+      filter: blur(0.3rem) brightness(60%);
+    }
+    &:hover &__figure-imageone {
+      transform: translateX(-9rem) scale(1);
+      filter: blur(0.3rem) brightness(60%);
+    }
+  }
+}

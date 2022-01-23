@@ -1,0 +1,30 @@
+@mixin clearfix {
+    &::after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 40em) {
+            @content;
+        }
+    }
+    @if $breakpoint == por-tablet {
+        @media (max-width: 56.25em) {
+            @content;
+        }
+    }
+    @if $breakpoint == pc {
+        @media (max-width: 75em) {
+            @content;
+        }
+    }
+    @if $breakpoint == Lpc {
+        @media (min-width: 112.5em) {
+            @content;
+        }
+    }
+}

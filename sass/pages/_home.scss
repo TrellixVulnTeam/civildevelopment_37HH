@@ -1,0 +1,36 @@
+.section-feature {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-white, $color-white-dark);
+    margin-top: -10rem;
+}
+
+.section-texts {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-white, $color-white);
+}
+
+.section-about {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-white, $color-white-dark);
+}
+
+.footer-section {
+    padding: 15rem 0;
+}
+
+.section-aboutdescription{
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-white, $color-white-dark);
+}
+.section-portfoliodescription
+    {
+        padding: 15rem 0;
+    }
+.section-portfolio-secondary{
+    padding: 15rem 0;
+background-image:linear-gradient(to right bottom,rgba($color-black,0.8),rgba($color-black, 0.78)), url(../img/build-8.jpg);
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}

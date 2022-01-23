@@ -1,0 +1,20 @@
+{
+  "name": "civil_development",
+  "version": "1.0.0",
+  "description": "make the world beautiful",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss CSS/style.css -w"
+  },
+  "keywords": [
+    "civil"
+  ],
+  "author": "mahmudur rahman",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
