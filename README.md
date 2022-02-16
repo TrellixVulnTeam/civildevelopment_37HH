@@ -1,3 +1,3 @@
 # civildevelopment
 
-click to visit this amazing portfolio--- https://mahmudurrahman-1.github.io/civildevelopment/
+## https://civildev.netlify.app/
